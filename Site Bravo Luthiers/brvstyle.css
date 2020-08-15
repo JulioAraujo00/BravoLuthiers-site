@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+/*-------------------------------------------Barra de Navegação-----------------------*/
+#Navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand img {
+    height: 60px;
+    padding-left: 30px;
+}
+.navbar-nav li {
+    padding: 0 10px;
+}
+.navbar-nav li a {
+   float: right;
+   text-align: left; 
+}
+#nav-bar ul li a:hover {
+  color: #007bff6c!important; /*COR DO HOVER, ALTERAR!!!*/
+}
+.navbar {
+    background: #fff;
+}
+.navbar-toggler {
+    border: none!important;/*o !important sobrepõe as classes do bootstrap*/
+}
+.nav-link {
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;  
+}
+/*-------------------------------------------------SLIDER-----------------------------------------------*/
+
+/*-----------------------------------------Sobre nós--------------------------*/
+#about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+#about .btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+.about-content {
+    padding-top: 20px;
+}
+/*-----------------------------------------Serviços---------------------------------*/
+#services {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/imgs/7.jpg);
+    background-size: cover;
+    background-position:center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#services h1 {
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+#services h1::after {
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.services {
+    margin-top: 50px;
+}
+.icon {
+    font-size: 40px;
+    margin-top: 10px auto;
+    padding: 10px;
+   
+}
+#services p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.services .col-md-3:hover {
+    background: #007bff6c;
+    cursor: pointer;
+    border-radius: 1%;
+    transition: 0.5s;
+}
+/*-------------------------------------------Equipe------------------------------------*/
+#team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+    margin-left: 5%;
+}
+h1 {
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+}
+h1::after {
+    content: '';
+    background: #007bff6c;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.profile-pic {
+    margin-top: 25px;
+    margin-right: 10.5em;
+    margin-left: 11.5em;
+    
+}
+.profile-pic .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.profile-pic .img-box img {
+    filter: grayscale(1);
+    width: 200px;
+}
+.profile-pic .img-box img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.profile-pic  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff !important;
+}
+.profile-pic  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#team .fa { /*icones que nao coloquei, mas ja estão configurados*/
+    height: 25px;
+    width: 25px;
+    color: 007bff !important;
+    background: #fff;
+    padding: 4px;
+    border-radius: 25%;
+}
+.img-box ul {
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li {
+    padding: 5px;
+    display: inline-block;
+}
+.img-box:hover ul {
+    opacity: 1;
+}
+.img-box ul, .img-box ul li {
+    transition: 0.5s;
+}
